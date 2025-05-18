@@ -1,0 +1,29 @@
+import time
+import os
+import random
+
+def fake_hacking():
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print("Initializing hack.exe...\n")
+    time.sleep(1)
+
+    steps = [
+        "Connecting to FBI server...",
+        "Bypassing firewall...",
+        "Injecting trojan horse...",
+        "Stealing cookies...",
+        "Downloading memes...",
+        "Hacking mainframe...",
+        "Uploading to dark web...",
+        "Sending data to NASA...",
+        "Decrypting password: *********"
+    ]
+
+    for step in steps:
+        print(step)
+        time.sleep(random.uniform(0.5, 1.5))
+
+    print("\nACCESS GRANTED. Welcome, Agent 007 😎")
+    print("Just kidding! 😂 This is a prank.")
+
+fake_hacking()
